@@ -26,27 +26,18 @@
 # math.ceil(10/4)=math.ceil(2.5)=3</i>
 # </p>
 
-# ## Kütüphaneler
-
-# In[1]:
-
-
-import math
-
-
-# ## Fonksiyonlar
+# ## İskambil Kartı Örneği 
 
 # In[ ]:
 
+
+import math
 
 def Sonuc(Iskambil_Kart_Sayisi): # Güvercin Yuvası Prensibi kuralı baz alındığında (güvercin/yuva sayısı)=(İskambil Kart Sayısı/Kart Tipi Sayısı) oranı yukarı yuvarlanmalıdır.
 	
 	sonuc = (math.ceil(int(Iskambil_Kart_Sayisi)/4.0))
  
 	return sonuc
-
-
-# In[ ]:
 
 
 def SayiKontrol(GirilenDeger): #Girilen değerin kontrolü sağlanır. Negatif sayı yada harf girildiğinde uyarı çıkartılır. 
@@ -57,19 +48,20 @@ def SayiKontrol(GirilenDeger): #Girilen değerin kontrolü sağlanır. Negatif s
 		return False
 	else:
 		return True
-
-
-# ## İşlemin Yapılışı
-
-# In[ ]:
-
-
+ 
+    
 while True:
 	print("Lütfen 1 ile 52 aralığında bir sayi giriniz..")
 	Iskambil_Kart_Sayisi = input("Kac adet iskambil karti ile islem yapmak istersiniz?: ")
 	if SayiKontrol(Iskambil_Kart_Sayisi) == True:
 		print("Aynı Tipte Kart Sayısı: En az %d adettir." % Sonuc(Iskambil_Kart_Sayisi))
 	print("\n")
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
